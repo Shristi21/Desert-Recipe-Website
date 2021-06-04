@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset= "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Mango Custard recipe</title>
+
+<!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   
+   <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" href="css/custard.css">
+	
+	</head>
+	
+  <body>
+  
+   <h1> Mango Custard</h1>
+    <div class="pic">
+      <img src="images/mango custard.jpg" alt="Delicious recipe"></div>
+	 
+        <div class ="intro">
+          <p>It's not necessary that to eat desert there should be any special ocassion or any festival.Infact everyone likes to eat something delicious after the meal. So, we are here with another appetizing 
+           		recipe of mango custard whose ingredients are easily accessible . so, let's commence with the recipe.  
+		  
+		  </p>
+	 </div>
+    <h3>Ingredients</h3>
+	
+	<!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="images/milk.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="images/sugar.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="images/powder.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="images/mango.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="images/pomegranate.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="images/apple.png" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/milk.jpg" style="width:100%" onclick="currentSlide(1)" alt="MILK">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/sugar.jpg" style="width:100%" onclick="currentSlide(2)" alt="SUGAR">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/powder.jpg" style="width:100%" onclick="currentSlide(3)" alt="CUSTARD POWDER">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/mango.jpg" style="width:100%" onclick="currentSlide(4)" alt="MANGO">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/pomegranate.png" style="width:100%" onclick="currentSlide(5)" alt="POMEGRANATE">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/apple.png" style="width:100%" onclick="currentSlide(6)" alt="APPLE">
+    </div>
+  </div>
+</div>
+	
+	<div class="ingred">
+	     <ul><li>2 cup milk</li>
+	     <li>3 tbsp custard powder</li>
+	     <li>1/4 cup sugar</li>
+	     <li>1/4 cup cold milk</li>
+	     <li>3/4 cup mango pulp</li>
+		 <li>Pomegranate</li>
+		 <li>Apple</li>
+		  </ul>
+      </div>
+   <h3>Directions</h3>
+   <div class="step">
+       <ol><li>Add two cup of milk in a pan and boil it on the low flame for 2-3 mins. </li>
+           <li>Now add custard milk and stir them well so that lumps may not form.</li>
+	       <li>Add 1/4 cup of sugar and give it a stir.</li>
+	       <li>Cook them well on low flame for about 10 minutes so, that mixture gets thickens and turns creamy. After that let the mixture cool down completely.</li>
+	       <li>Further, add 3/4 cup of mango pulp in it and mix them well and then pour the mixture into the glass.</li>
+	       <li>Add chopped mango cubes, grapes, apple, pomegranate and finely chopped dry fruits and 1/2 tbsp cardamon powder. Mix them well and refrigerate it for atleast1 hour.</li></ol><br/>
+               <p> You can also add your choice of fruits or dry fruits for garnishing. So, this amazing custard recipe is ready to serve and you can relish with your family.Have fun!!  </p> 
+     </div>
+	 <footer>
+	   </footer>
+	   <script>
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+	  
+  </body>
+</html>

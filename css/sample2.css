@@ -1,0 +1,111 @@
+body, html {
+  height: 100%;
+  margin: 0 auto;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  background-color:#eb346e;
+ 
+}
+
+
+
+.cd-logo,.ingredients,.step1,.step2,.step3,.step4,.step5,.step6,.step7,.step8,.step9{
+  
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #e60956;
+  background-size: 75% 100%;
+  min-height:100%; 
+  background-attachment:fixed;
+
+}
+
+
+.cd-logo 
+{
+  background-image: url('../images/tiramisu.jpeg');
+	
+}
+
+.mid h2 {
+  font-family:cursive,sans-serif;
+  font-style:italic;
+  font-weight:900;
+  color: #ffffff;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+}
+
+
+
+h2 ,h3{
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 150% "Lato", sans-serif;
+  color: #ffffff;
+  text-align:center;
+  text-shadow:2px 2px 5px #FFD700;
+}
+
+p,li
+{color: white;
+  
+  font:120% "Lato", sans-serif ;
+}
+
+.textSection {
+  background-color:#e60956;
+  padding:50px 80px;
+}
+
+.ingredients
+{
+	background-image:url('../images/tira_ingredients.png');
+}
+
+
+
+.abc
+{
+   display:inline-block;
+	/*float:left;*/
+}
+.efg
+{display:inline-block;	
+}
+
+.step1
+{
+background-image:url('../images/eggyolk.jpg');	
+}
+.step2
+{background-image:url('../images/whisking.jpg');
+
+
+}
+.step3
+{background-image:url('../images/cheese.jpg');
+}
+.step4
+{background-image:url('../images/eggwhite.jpg');
+}
+
+.step5
+{background-image:url('../images/coffee.jpg');
+}
+.step6
+{background-image:url('../images/biscuits.jpg');
+}
+.step7
+{background-image:url('../images/put.jpg');
+}
+.step8
+{background-image:url('../images/layer.jpg');
+}
+.step9
+{background-image:url('../images/ready.jpg');
+}

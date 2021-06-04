@@ -1,0 +1,101 @@
+  h1{
+  text-align: center;
+  color: #E52B50;
+  font-size: 350%;
+  text-transform: uppercase;
+  font-family:Cooper black;
+  
+  }
+  
+  .pic img{
+	 margin-left:25%;
+	  width:50%;
+	  height: auto;
+	  border-radius: 20px;
+	  opacity:.8;
+	  }
+	  
+	.pic img:hover{
+		opacity: 1;
+	}
+	
+  .intro{
+	  color: #4b0082;
+	  font-family:Times,Arial,Roman;
+      font-style: italic;
+	  font-size: 180%;
+	  background-color: #bbffff;
+	  margin: 2%;
+	  
+	 }	
+   
+   h3{
+	   font-style: bold;
+	   color:#800020;
+	   text-transform: uppercase;
+	   font-family: Algerian,Times New Roman,Arial;
+	   font-size:320%;
+	   height: auto;
+	   text-align:center;
+   }
+   .ingred{
+	   background-color:#ffe1ff;
+	   margin: 2%;
+	  
+	  }
+	  
+	.ingred ul:hover{
+		background-color:#c1ffc1;
+		transition: 1.75s ease;
+	}
+		
+     .ingred ul{
+       font-size:200%;
+       font-style: bold;
+       	font-family:Times New Roman,Arial; 
+		color:#003153;
+	    margin-top: 4%;
+	 }
+	 .step{
+		 background-color:#fff68f;
+		 margin:2%;
+		 
+		 }
+	 
+	 
+	 .step ol{
+		 
+		 font-size:200%;
+       font-style: bold;
+       	font-family:Times New Roman,Arial; 
+		color: #1874cd;
+	 }
+	 .step ol:hover{
+		 background-color:#ffe4c4;
+		 transition: 1.75s ease;
+	 }
+	 
+	 .step p{
+		 font-size:250%;
+		 color:#c76114;
+		 font-style:italic;
+		 background-color:#ffffff;
+	       }
+		 
+	  .item img{
+		  width: 60%;
+		  margin-left: 20%;
+		  
+		  }
+       
+	   .carousel-caption h1{
+		   color:#effd5f;
+		   font-size:200%;
+		   text-align: center;
+		  
+		  }
+	   
+	   .carousel-inner > .item{
+		   height: 400px;
+		      }
+	   

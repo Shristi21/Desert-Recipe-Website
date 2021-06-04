@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset= "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Smoothie recipe</title>
+
+<!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   
+   <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" href="css/smoothie.css">
+	
+	</head>
+	
+  <body>
+  
+   <h1> Spinach Smoothie</h1>
+    <div class="pic">
+      <img src="images/smoothie.jpg" alt="Delicious recipe"></div>
+	 
+        <div class ="intro">
+          <p> Nowdays,due to the atrocious lifestyle and irregular routine every fourth person is suffering from obesity. Therefore to get 
+             rid of this problem we are here with a recipe of spinach smoothie which is very beneficial for your health. It will not only help in 
+             reducing the weight but also provide protien to your body and also helps in increasing the metabolism of body. It will also help in 
+             increasing the immunity of your immune system. Eveyone wants to remain fit and healthy So, let's begin with the recipe.			 
+		  
+		  </p>
+	 </div>
+    <h3>Ingredients</h3>
+	
+	<!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 7</div>
+      <img src="images/pineapple.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 7</div>
+      <img src="images/milk.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 7</div>
+      <img src="images/spinach.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 7</div>
+      <img src="images/lemon.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 7</div>
+      <img src="images/salt.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 7</div>
+      <img src="images/pepper.jpg" style="width:100%">
+  </div>
+   <div class="mySlides">
+    <div class="numbertext">7 / 7</div>
+      <img src="images/banana.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/pineapple.jpg" style="width:100%" onclick="currentSlide(1)" alt="PINEAPPLE">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/milk.jpg" style="width:100%" onclick="currentSlide(2)" alt="MILK">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/spinach.jpg" style="width:100%" onclick="currentSlide(3)" alt="SPINACH LEAVES">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/lemon.jpg" style="width:100%" onclick="currentSlide(4)" alt="LEMON JUICE">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/salt.jpg" style="width:100%" onclick="currentSlide(5)" alt="BLACK SALT">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/pepper.jpg" style="width:100%" onclick="currentSlide(6)" alt="BLACK PEPPER">
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="images/banana.jpg" style="width:100%" onclick="currentSlide(7)" alt="BANANAS">
+    </div>
+  </div>
+</div>
+	
+	<div class="ingred">
+	     <ul><li>1 cup milk</li>
+	     <li>1 cup referigerated banana</li>
+	     <li>1 cup diced pineapple</li>
+	     <li>1 cup baby spinach leaves</li>
+	     <li>1 tbsp lemon juice</li>
+		 <li>pinch of black salt</li>
+		 <li>pinch of black pepper powder</li>
+		  </ul>
+      </div>
+   <h3>Directions</h3>
+   <div class="step">
+       <ol><li>Add diced pineapple, banana, one cup milk and spinach leaves into a blender and blend them well so that smooth texture will form. </li>
+           <li>After that put the smoothie into the glass.</li>
+	       <li>Add 1 tbsp lemon juice, pinch of black salt and pinch of black pepper powder and mix them well.</li>
+	       <li>You can garnish it with cucumber and spinach leaves.</li>
+	       </ol><br/>
+               <p> Now as you can see this nutritious and healthy smoothie recipe is ready to present.Enjoy with your family!! </p> 
+     </div>
+	 <footer>
+	   </footer>
+	   <script>
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+	  
+  </body>
+</html>
